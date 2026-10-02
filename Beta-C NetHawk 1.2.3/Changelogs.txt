@@ -1,0 +1,78 @@
+Beta-C NetHawk 1.2.3
+
+Release Type: Beta
+
+Added
+Live network connection monitoring
+TCP and UDP connection tracking
+Connection change detection
+NEW and CLOSED connection reporting
+TCP connection statistics
+UDP connection statistics
+ESTABLISHED connection statistics
+LISTENING connection statistics
+TIME_WAIT connection statistics
+Other TCP connection statistics
+Unique process counting
+Connection counting by PID
+Busiest process identification
+Windows PID-to-process name lookup
+Network information display
+Hostname detection
+Local IPv4 detection
+IP configuration information
+Default route information
+Windows network interface information
+Ping diagnostics
+DNS lookup diagnostics
+TCP connection testing
+Traceroute diagnostics
+Threaded TCP port scanning
+Common-port scanning
+Custom port-range scanning
+Timestamped activity logging
+Windows batch launcher
+Improved
+Organized NetHawk into separate network information, diagnostics,
+port scanning, live monitoring, and main menu sections.
+Improved live monitor output for TCP and UDP connections.
+Added process-level connection statistics to the live monitor.
+Improved connection change reporting.
+Added error handling for network commands and socket operations.
+Fixed
+Fixed connection monitoring and display issues.
+Fixed process identification handling.
+Fixed connection change detection output.
+Fixed port scanning result handling.
+Notes
+
+Beta-C NetHawk 1.2.3 is a stable beta checkpoint of the project.
+
+Future development will continue in later versions.
+
+Previous Versions
+
+### v1.2.3 Beta-B
+- Expanded from connection monitor into a full toolkit
+- Added Network Information module
+  - Host name, local IPv4, ipconfig, gateway/routes, adapter status
+- Added Network Diagnostics module
+  - Ping, DNS lookup, TCP connection test with latency, traceroute
+- Added threaded Port Scanner
+  - Common ports mode
+  - Custom port range mode
+  - Common service identification
+- Improved scan performance with ThreadPoolExecutor
+- Reduced port-scan timeout for faster results
+- Kept live TCP/UDP connection monitor
+- Added basic event logging to nethawk_log.txt
+
+### v1.2.2
+- Added change detection for connections
+- Added TCP/UDP statistics
+- Added timestamps and file logging
+- Improved baseline handling on startup
+
+### v1.2.1 / earlier
+- Initial live connection monitor
+- Basic netstat parsing and display
